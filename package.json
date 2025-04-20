@@ -1,0 +1,14 @@
+{
+  "name": "before-cline",
+  "version": "1.0.0",
+  "description": "Simple Node.js project to call OpenAI babbage-002 API",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "openai": "^4.9.0"
+  }
+}
