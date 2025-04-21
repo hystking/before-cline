@@ -32,9 +32,7 @@ import dotenv from "dotenv";
 dotenv.config();
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
-const prompt = `Complete the news headline:
-
-Breaking News: Tokyo `
+const prompt = `Breaking News: Tokyo `
 
 console.log("Prompt:", prompt);
 
@@ -51,20 +49,16 @@ console.log(response.choices[0].text);
 実行結果は以下のようになります。東京オリンピックに関する嘘ニュースが生成されました。
 
 ```
-Prompt: Complete the news headline:
+Prompt: Breaking News: Tokyo 
+2020 Olympics to be postponed until 2021
 
-Breaking News: Tokyo 
-2020 Olympics to be held in 2021
+The Tokyo 2020 Olympics will be postponed until 2021, the International Olympic Committee has announced.
 
-The Tokyo 2020 Olympics will be held in 2021, the International Olympic Committee (IOC) has announced.
+The IOC said the decision was made after a meeting with the Tokyo 2020 organising committee, the Japanese government and the city of Tokyo.
 
-The Games were postponed on Tuesday due to the coronavirus pandemic.
+The decision was made to protect the health of athletes, the public and the global community.
 
-The IOC said the Games would be held "not later than summer 2021" but did not specify a date.
-
-The decision was taken after a conference call between the IOC, Tokyo 2020 organisers and the Japanese prime minister.
-
-The IOC said the decision was
+The IOC said it would now work with the Tokyo 2020 organising committee to “finalise” a new
 ```
 
 ## GPT でチャットをしよう
